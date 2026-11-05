@@ -33,8 +33,6 @@ Python alternatives
 -------------------
 - max() is used to select between extending the current subarray
   and starting a new one.
-- itertools.accumulate() can be used in an alternative prefix-sum
-  implementation, although Kadane's algorithm is more space-efficient.
 """
 
 
