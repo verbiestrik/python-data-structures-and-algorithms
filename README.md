@@ -92,7 +92,7 @@ Each implementation contains a docstring describing the problem, the chosen algo
 Clone the repository:
 
 ```bash
-git clone [url](https://github.com/verbiestrik/python-data-structures-and-algorithms)
+git clone https://github.com/verbiestrik/python-data-structures-and-algorithms
 cd python-algorithms
 ```
 
