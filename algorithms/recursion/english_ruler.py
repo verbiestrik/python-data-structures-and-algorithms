@@ -48,7 +48,7 @@ Let n be the number of inches and L be the maximum tick length.
 Each interval produces 2^(L-1) - 1 intermediate ticks.
 
 Time complexity:
-    O(n * L * 2^L), including the time required to print the tick characters.
+    O(n * 2^L), including the time required to print the tick characters.
 
 Space complexity:
     O(L) auxiliary space for the recursive call stack.
