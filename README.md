@@ -6,7 +6,7 @@ The project focuses on algorithmic thinking, efficient implementations, code qua
 
 ## Development approach
 
-The algorithms in this repository were initially drafted independently by me, based on my understanding of the underlying problems, algorithmic principles, and data structures in Python. I subsequently used ChatGPT as a programming assistant to review and improve the implementations. This collaboration focused on:
+The algorithms in this repository were implemented while reading the book Data Structures and Algorithms in Python by Michael T. Goodrich, Roberto Tamassia, Michael H. Goldwasser and many of the implementations are clearly influenced by the book. The algorithms were initially drafted independently by me, based on my understanding of the underlying problems, algorithmic principles, and data structures in Python. I subsequently used ChatGPT as a programming assistant to review and improve the implementations. This collaboration focused on:
 
 - **Algorithm optimisation:** Improving time and space efficiency where possible.
 - **Code quality:** Improving readability, structure, naming conventions, and documentation.
