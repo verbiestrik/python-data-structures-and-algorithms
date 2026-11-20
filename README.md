@@ -6,8 +6,9 @@ The project focuses on algorithmic thinking, efficient implementations, code qua
 
 ## Development approach
 
-The algorithms in this repository were implemented while reading the book Data Structures and Algorithms in Python by Michael T. Goodrich, Roberto Tamassia, Michael H. Goldwasser and many of the implementations are clearly influenced by the book. The algorithms were initially drafted independently by me, based on my understanding of the underlying problems, algorithmic principles, and data structures in Python. I subsequently used ChatGPT as a programming assistant to review and improve the implementations. This collaboration focused on:
+The algorithms in this repository were implemented while reading the book Data Structures and Algorithms in Python by Michael T. Goodrich, Roberto Tamassia, Michael H. Goldwasser and many of the implementations are clearly influenced by the book. The algorithms were initially drafted independently by me, based on my understanding of the underlying problems, algorithmic principles, and data structures in Python.
 
+I subsequently used ChatGPT as a programming assistant to review and improve the implementations. This collaboration focused on:
 - **Algorithm optimisation:** Improving time and space efficiency where possible.
 - **Code quality:** Improving readability, structure, naming conventions, and documentation.
 - **Error handling:** Introducing input validation and appropriate exceptions.
@@ -18,10 +19,10 @@ Importantly, I reviewed and verified the resulting implementations to ensure tha
 
 ## Repository structure
 
-The repository is organised by algorithm category, with implementation files separated from their corresponding tests.
+The repository is organised by algorithm category and data structure, with implementation files separated from their corresponding tests.
 
 ```text
-python-algorithms/
+python-data-structures-and-algorithms/
 │
 ├── algorithms/
 │   ├── arrays/
@@ -30,11 +31,23 @@ python-algorithms/
 │   │   ├── rotate_list.py
 │   │   └── two_sum.py
 │   │
+│   ├── graphs/
+│   │   └── dijkstra.py
+│   │
 │   ├── matrices/
 │   │   └── sum_and_transpose.py
 │   │
 │   ├── numbers/
 │   │   └── find_primes.py
+│   │
+│   ├── recursion/
+│   │   ├── all_permutations.py
+│   │   ├── disk_usage.py
+│   │   ├── english_ruler.py
+│   │   └── summation_puzzle.py
+│   │
+│   ├── searching/
+│   │   └── binary_search.py
 │   │
 │   ├── sequences/
 │   │   ├── kth_largest.py
@@ -48,13 +61,28 @@ python-algorithms/
 │       ├── reverse_string.py
 │       └── valid_anagram.py
 │
+├── data_structures/
+│   └── singly_linked_list.py
+│
 ├── tests/
-│   └── algorithms/
-│       ├── arrays/
-│       ├── matrices/
-│       ├── numbers/
-│       ├── sequences/
-│       └── strings/
+│   ├── algorithms/
+│   │   ├── arrays/
+│   │   ├── graphs/
+│   │   │   └── test_dijkstra.py
+│   │   ├── matrices/
+│   │   ├── numbers/
+│   │   ├── recursion/
+│   │   │   ├── test_all_permutations.py
+│   │   │   ├── test_disk_usage.py
+│   │   │   ├── test_english_ruler.py
+│   │   │   └── test_summation_puzzle.py
+│   │   ├── searching/
+│   │   │   └── test_binary_search.py
+│   │   ├── sequences/
+│   │   └── strings/
+│   │
+│   └── data_structures/
+│       └── test_singly_linked_list.py
 │
 └── README.md
 ```
@@ -69,8 +97,14 @@ The repository currently includes the following problems:
 | Arrays | Maximum sum of a contiguous subarray (Kadane's algorithm) |
 | Arrays | List rotation |
 | Arrays | Two Sum |
+| Graphs | Shortest paths using Dijkstra's algorithm |
 | Matrices | Row sums and matrix transpose |
 | Numbers | Sieve of Eratosthenes |
+| Recursion | Generating all unique permutations of a string |
+| Recursion | Drawing an English ruler |
+| Recursion | Recursive directory disk usage calculation |
+| Recursion | Summation puzzle solving (backtracking) |
+| Searching | Binary search on sorted sequences |
 | Sequences | Kth largest distinct element |
 | Sequences | Moving average (sliding window) |
 | Strings | Palindrome checking |
@@ -81,6 +115,14 @@ The repository currently includes the following problems:
 | Strings | Valid anagram checking |
 
 Each implementation contains a docstring describing the problem, the chosen algorithmic approach, its theoretical complexity, and relevant Python alternatives.
+
+## Implemented data structures
+
+The repository currently includes the following data structures:
+
+| Data Structure | Implementation |
+|---|---|
+| Singly linked list | Insertion, removal, and reversal operations |
 
 ## Getting started
 
@@ -93,7 +135,7 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/verbiestrik/python-data-structures-and-algorithms
-cd python-algorithms
+cd python-data-structures-and-algorithms
 ```
 
 Install pytest:
@@ -156,10 +198,9 @@ python -m pytest -v
 
 ### Testing philosophy
 
-Each algorithm has a dedicated test file, separate from its implementation.
+Each algorithm and data structure has a dedicated test file, separate from its implementation.
 
 The tests cover:
-
 - **Normal cases:** Typical inputs and expected outputs.
 - **Edge cases:** Empty sequences, single elements, duplicate values, negative numbers, and other boundary conditions where relevant.
 - **Invalid inputs:** Incorrect argument types, invalid parameters, and other unsupported inputs.
@@ -170,7 +211,6 @@ The implementations use explicit validation and raise appropriate exceptions whe
 ## Design principles
 
 Throughout the project, I aim to follow several principles:
-
 1. **Understandable implementations:** Prioritise fundamental Python constructions and algorithmic understanding over unnecessary reliance on convenient libraries.
 2. **Efficiency:** Consider both theoretical time and space complexity when choosing an approach.
 3. **Readable code:** Use meaningful variable names, clear function interfaces, and comments where they add value.
