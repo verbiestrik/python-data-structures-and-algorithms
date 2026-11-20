@@ -125,6 +125,7 @@ The repository currently includes the following data structures:
 | Data Structure | Implementation |
 |---|---|
 | Singly linked list | Insertion, removal, and reversal operations |
+| Dynamic array | Append and get item by index |
 
 ## Getting started
 
