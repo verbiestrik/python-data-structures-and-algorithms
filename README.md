@@ -27,15 +27,26 @@ python-data-structures-and-algorithms/
 ├── algorithms/
 │   ├── arrays/
 │   │   ├── common_elements.py
+│   │   ├── find_duplicates.py
+│   │   ├── find_most_frequent_element.py
+│   │   ├── kth_largest.py
 │   │   ├── maximum_subarray.py
+│   │   ├── merge_two_sorted_lists.py
 │   │   ├── rotate_list.py
 │   │   └── two_sum.py
 │   │
 │   ├── graphs/
 │   │   └── dijkstra.py
 │   │
+│   ├── heaps/
+│   │   ├── find_k_most_frequent_elements.py
+│   │   └── find_k_most_frequent_strings.py
+│   │
 │   ├── matrices/
 │   │   └── sum_and_transpose.py
+│   │
+│   ├── number_systems/
+│   │   └── base_conversion.py
 │   │
 │   ├── numbers/
 │   │   └── find_primes.py
@@ -46,15 +57,18 @@ python-data-structures-and-algorithms/
 │   │   ├── english_ruler.py
 │   │   └── summation_puzzle.py
 │   │
-│   ├── searching/
-│   │   └── binary_search.py
-│   │
 │   ├── sequences/
-│   │   ├── kth_largest.py
+│   │   ├── binary_search.py
 │   │   └── moving_average.py
+│   │
+│   ├── stacks/
+│   │   ├── check_balanced_parentheses.py
+│   │   └── match_html.py
 │   │
 │   └── strings/
 │       ├── check_palindrome.py
+│       ├── find_most_frequent_string.py
+│       ├── first_non_repeating_char.py
 │       ├── group_anagrams.py
 │       ├── longest_substring.py
 │       ├── longest_word.py
@@ -62,23 +76,34 @@ python-data-structures-and-algorithms/
 │       └── valid_anagram.py
 │
 ├── data_structures/
+│   ├── array_stack.py
+│   ├── dynamic_array.py
 │   └── singly_linked_list.py
-│   └── dynamic_array.py
-│   └── array_stack.py
 │
 ├── tests/
 │   ├── algorithms/
 │   │   ├── arrays/
 │   │   │   ├── test_common_elements.py
+│   │   │   ├── test_find_duplicates.py
+│   │   │   ├── test_find_most_frequent_element.py
+│   │   │   ├── test_kth_largest.py
 │   │   │   ├── test_maximum_subarray.py
+│   │   │   ├── test_merge_two_sorted_lists.py
 │   │   │   ├── test_rotate_list.py
 │   │   │   └── test_two_sum.py
 │   │   │
 │   │   ├── graphs/
 │   │   │   └── test_dijkstra.py
 │   │   │
+│   │   ├── heaps/
+│   │   │   ├── test_find_k_most_frequent_elements.py
+│   │   │   └── test_find_k_most_frequent_strings.py
+│   │   │
 │   │   ├── matrices/
 │   │   │   └── test_sum_and_transpose.py
+│   │   │
+│   │   ├── number_systems/
+│   │   │   └── test_base_conversion.py
 │   │   │
 │   │   ├── numbers/
 │   │   │   └── test_find_primes.py
@@ -89,15 +114,18 @@ python-data-structures-and-algorithms/
 │   │   │   ├── test_english_ruler.py
 │   │   │   └── test_summation_puzzle.py
 │   │   │
-│   │   ├── searching/
-│   │   │   └── test_binary_search.py
-│   │   │
 │   │   ├── sequences/
-│   │   │   ├── test_kth_largest.py
+│   │   │   ├── test_binary_search.py
 │   │   │   └── test_moving_average.py
+│   │   │
+│   │   ├── stacks/
+│   │   │   ├── test_check_balanced_parentheses.py
+│   │   │   └── test_match_html.py
 │   │   │
 │   │   └── strings/
 │   │       ├── test_check_palindrome.py
+│   │       ├── test_find_most_frequent_string.py
+│   │       ├── test_first_non_repeating_char.py
 │   │       ├── test_group_anagrams.py
 │   │       ├── test_longest_substring.py
 │   │       ├── test_longest_word.py
@@ -105,9 +133,9 @@ python-data-structures-and-algorithms/
 │   │       └── test_valid_anagram.py
 │   │
 │   └── data_structures/
+│       ├── test_array_stack.py
+│       ├── test_dynamic_array.py
 │       └── test_singly_linked_list.py
-│       └── test_dynamic_array.py
-│       └── test_array_stack.py
 │
 └── README.md
 ```
@@ -118,28 +146,38 @@ The repository currently includes the following problems:
 
 | Category | Algorithm |
 |---|---|
-| Arrays | Common elements in two sequences |
+| Arrays | Finding common elements in two sequences |
+| Arrays | Finding duplicates |
+| Arrays | Finding the most frequent element(s) |
+| Arrays | Kth largest distinct element |
 | Arrays | Maximum sum of a contiguous subarray (Kadane's algorithm) |
+| Arrays | Merging two sorted lists |
 | Arrays | List rotation |
 | Arrays | Two Sum |
 | Graphs | Shortest paths using Dijkstra's algorithm |
+| Heaps | Finding the k most frequent elements using different approaches |
+| Heaps | Finding the k most frequent strings using different approaches |
 | Matrices | Row sums and matrix transpose |
+| Number Systems | Conversion between arbitrary number systems (bases 2–36) |
 | Numbers | Sieve of Eratosthenes |
 | Recursion | Generating all unique permutations of a string |
 | Recursion | Drawing an English ruler |
 | Recursion | Recursive directory disk usage calculation |
 | Recursion | Summation puzzle solving (backtracking) |
-| Searching | Binary search on sorted sequences |
-| Sequences | Kth largest distinct element |
+| Sequences | Binary search on sorted sequences |
 | Sequences | Moving average (sliding window) |
+| Stacks | Checking balanced parentheses and delimiters |
+| Stacks | Matching opening and closing HTML tags |
 | Strings | Palindrome checking |
+| Strings | Finding the most frequent string |
+| Strings | Finding the first non-repeating character |
 | Strings | Grouping anagrams |
 | Strings | Longest substring without repeated characters |
 | Strings | Finding the longest word |
 | Strings | String reversal |
 | Strings | Valid anagram checking |
 
-Each implementation contains a docstring describing the problem, the chosen algorithmic approach, its theoretical complexity, and relevant Python alternatives.
+Each implementation contains a docstring describing the problem, the chosen algorithmic approach, its theoretical complexity, and relevant Python built-in functions or standard-library alternatives.
 
 ## Implemented data structures
 
@@ -148,8 +186,8 @@ The repository currently includes the following data structures:
 | Data Structure | Implementation |
 |---|---|
 | Singly linked list | Insertion, removal, and reversal operations |
-| Dynamic array | Append, get item by index, insert item at index, remove item |
-| Array-based stack | push, top (get last element without returning), pop | 
+| Dynamic array | Append, indexed access and assignment, insertion, and removal |
+| Array-based stack | Push, top (retrieve the top element without removing it), pop, and emptiness checking |
 
 ## Getting started
 
