@@ -64,6 +64,7 @@ python-data-structures-and-algorithms/
 ├── data_structures/
 │   └── singly_linked_list.py
 │   └── dynamic_array.py
+│   └── array_stack.py
 │
 ├── tests/
 │   ├── algorithms/
@@ -106,6 +107,7 @@ python-data-structures-and-algorithms/
 │   └── data_structures/
 │       └── test_singly_linked_list.py
 │       └── test_dynamic_array.py
+│       └── test_array_stack.py
 │
 └── README.md
 ```
@@ -146,7 +148,8 @@ The repository currently includes the following data structures:
 | Data Structure | Implementation |
 |---|---|
 | Singly linked list | Insertion, removal, and reversal operations |
-| Dynamic array | Append and get item by index |
+| Dynamic array | Append, get item by index, insert item at index, remove item |
+| Array-based stack | push, top (get last element without returning), pop | 
 
 ## Getting started
 
