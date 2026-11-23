@@ -39,7 +39,7 @@ Python Alternatives:
       but is not a general-purpose HTML parser.
 """
 
-from data_structures.array_stack import ArrayStack
+from data_structures.stacks.array_stack import ArrayStack
 
 def match_html(html_src):
     """Return True if all opening and closing HTML tags match."""
