@@ -1,6 +1,6 @@
 import pytest
 
-from data_structures.singly_linked_list import (
+from data_structures.list_implementations.singly_linked_list import (
     SinglyLinkedList,
     reverse_linked_list,
 )
