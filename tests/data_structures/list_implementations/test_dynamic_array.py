@@ -1,6 +1,6 @@
 import pytest
 
-from algorithms.data_structures.dynamic_array import DynamicArray
+from data_structures.list_implementations.dynamic_array import DynamicArray
 
 
 def test_initialisation():
