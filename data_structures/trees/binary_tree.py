@@ -87,3 +87,7 @@ class BinaryTree(Tree):
 
         if right_child is not None:
             yield right_child
+
+    def positions(self) -> Iterator[Tree.Position]:
+        """Return an iterator over the tree's positions, using inorder."""
+        return self.inorder()
